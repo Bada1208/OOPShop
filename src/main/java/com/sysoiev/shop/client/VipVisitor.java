@@ -2,17 +2,18 @@ package com.sysoiev.shop.client;
 
 public class VipVisitor extends BaseVisitor {
 
-    //private String name;не нужно дублировать переменную она у нас уже есть от BaseVisitor
+    // private String name; не нужно дублировать переменную, она уже есть в родительском классе Visitor
     private float discount;
 
     @Override
     public void buy() {
-        if(!checkDiscount()){
+        if (!checkDiscount()) {
             super.buy();
         }else{
-            //купить со скидкой
+            // купить со скидкой
         }
     }
+
     private boolean checkDiscount(){
         return discount>0;
     }

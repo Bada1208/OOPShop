@@ -1,13 +1,43 @@
 package com.sysoiev.shop.department;
 
-import com.sysoiev.shop.goods.BaseGoods;
-import com.sysoiev.shop.service.BaseEmployee;
+
+import com.sysoiev.shop.interfaces.DepartmentInterface;
+import com.sysoiev.shop.interfaces.EmployeeInterface;
+import com.sysoiev.shop.interfaces.GoodsInterface;
 
 import java.util.ArrayList;
 
-public class BaseDepartment {
-    private String name;
-    private ArrayList<BaseEmployee> employeeList;
-    private ArrayList<BaseGoods> goodsList;
 
+public class BaseDepartment implements DepartmentInterface {
+
+    private String name;
+    private ArrayList<EmployeeInterface> employeeList;
+    private ArrayList<GoodsInterface> goodsList;
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public ArrayList<EmployeeInterface> getEmployeeList() {
+        return employeeList;
+    }
+
+    public void setEmployeeList(ArrayList<EmployeeInterface> employeeList) {
+        this.employeeList = employeeList;
+    }
+
+    @Override
+    public ArrayList<GoodsInterface> getGoodsList() {
+        return goodsList;
+    }
+
+    public void setGoodsList(ArrayList<GoodsInterface> goodsList) {
+        this.goodsList = goodsList;
+    }
 }

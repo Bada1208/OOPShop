@@ -1,6 +1,7 @@
 package com.sysoiev.shop.service;
 
-public class Consultant extends BaseEmployee{
+public class Consultant extends BaseEmployee {
+
 
     public void consult(){
 
@@ -10,4 +11,6 @@ public class Consultant extends BaseEmployee{
     public void send(){
 
     }
+
+
 }

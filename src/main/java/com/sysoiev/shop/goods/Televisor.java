@@ -1,9 +1,14 @@
 package com.sysoiev.shop.goods;
 
-public class TVset extends ElectronicDevice{
-    private String model;
+public class Televisor extends ElectronicDevice{
+
+
+
 
     public void selectChannel(){
 
     }
+
+
+
 }

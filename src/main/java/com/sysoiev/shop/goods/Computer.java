@@ -1,8 +1,13 @@
 package com.sysoiev.shop.goods;
 
-public class Computer extends ElectronicDevice {
+public class Computer extends ElectronicDevice{
+
+
     private int ram;
 
-    public void loadOS() {
+
+
+    public void loadOS(){
+
     }
 }
