@@ -1,6 +1,6 @@
 package com.sysoiev.shop.client;
 
-public class Visitor {
+public class BaseVisitor {
     private  String name;
 
     public void buy(){

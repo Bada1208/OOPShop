@@ -1,14 +1,7 @@
 package com.sysoiev.shop.goods;
 
-public class GameConsole {
-    private String name;
+public class GameConsole extends ElectronicDevice{
     private int ram;
-    private String department;
-
-
-    public void on(){
-
-    }
 
     public void loadGame(){
 

@@ -1,11 +1,11 @@
 package com.sysoiev.shop.bank;
 
-public class Bank {
+public class BaseBank {
     private String name;
     private String creditDescription;
 
-   public void checkInfo(){}
-   public void giveCredit(){
+    public void checkInfo(){}
+    public void giveCredit(){
 
-   }
+    }
 }

@@ -1,10 +1,7 @@
 package com.sysoiev.shop.service;
 
-public class Cashier {
+public class Cashier extends BaseEmployee{
 
-    private String name;
-    private String department;
-    private boolean free;
 
     public void getMoney(){
 

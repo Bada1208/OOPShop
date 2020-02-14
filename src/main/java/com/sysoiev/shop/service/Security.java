@@ -1,7 +1,6 @@
 package com.sysoiev.shop.service;
 
-public class Security {
-    private String name;
+public class Security extends BaseEmployee {
 
     public void checkVisitor(){
 

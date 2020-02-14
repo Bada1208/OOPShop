@@ -1,15 +1,7 @@
 package com.sysoiev.shop.goods;
 
-public class Computer {
-    private String name;
+public class Computer extends ElectronicDevice {
     private int ram;
-    private String department;
-
-    public void on() {
-    }
-
-    public void off() {
-    }
 
     public void loadOS() {
     }

@@ -1,9 +1,7 @@
 package com.sysoiev.shop.goods;
 
-public class HardDrive {
-    private String name;
+public class HardDrive extends ElectronicDevice{
     private int volume;
-    private String department;
 
     public void format(){
 

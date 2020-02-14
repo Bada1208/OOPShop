@@ -1,11 +1,6 @@
 package com.sysoiev.shop.service;
 
-public class Consultant {
-
-    private String name;
-    private String department;
-    private boolean free;
-
+public class Consultant extends BaseEmployee{
 
     public void consult(){
 
