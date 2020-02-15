@@ -19,6 +19,7 @@ public class Main {
         imitateShopWorking();
     }
 
+
     private static void imitateShopWorking() {
 
         SalesRoom salesRoom = new SalesRoom();// создаем торговый зал
