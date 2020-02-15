@@ -4,7 +4,7 @@ package com.sysoiev.shop.goods;
 import com.sysoiev.shop.department.BaseDepartment;
 import com.sysoiev.shop.interfaces.GoodsInterface;
 
-public class BaseGoods implements GoodsInterface {
+public abstract class BaseGoods implements GoodsInterface {
     // свойства, которые будут иметь все товары
     private double price;
 

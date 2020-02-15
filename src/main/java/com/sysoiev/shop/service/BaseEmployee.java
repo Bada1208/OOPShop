@@ -3,7 +3,7 @@ package com.sysoiev.shop.service;
 import com.sysoiev.shop.interfaces.DepartmentInterface;
 import com.sysoiev.shop.interfaces.EmployeeInterface;
 
-public class BaseEmployee implements EmployeeInterface {
+public abstract class BaseEmployee implements EmployeeInterface {
 
     private String name;
     private DepartmentInterface department;

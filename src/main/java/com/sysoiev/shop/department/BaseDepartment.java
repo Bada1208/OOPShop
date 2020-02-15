@@ -8,7 +8,7 @@ import com.sysoiev.shop.interfaces.GoodsInterface;
 import java.util.ArrayList;
 
 
-public class BaseDepartment implements DepartmentInterface {
+public abstract class BaseDepartment implements DepartmentInterface {
 
     private String name;
     private ArrayList<EmployeeInterface> employeeList;

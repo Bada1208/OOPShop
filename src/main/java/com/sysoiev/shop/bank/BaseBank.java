@@ -3,10 +3,15 @@ package com.sysoiev.shop.bank;
 
 import com.sysoiev.shop.interfaces.BankInterface;
 
-public class BaseBank implements BankInterface {
+public abstract class BaseBank implements BankInterface {
 
     private String name;
     private String creditDescription;
+
+    public BaseBank(String name, String creditDescription) {
+        this.name = name;
+        this.creditDescription = creditDescription;
+    }
 
 
     @Override
