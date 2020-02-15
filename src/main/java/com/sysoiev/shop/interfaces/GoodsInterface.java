@@ -1,6 +1,5 @@
 package com.sysoiev.shop.interfaces;
 
-
 public interface GoodsInterface {
 
     double getPrice();

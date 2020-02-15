@@ -1,10 +1,18 @@
 package com.sysoiev.shop.goods;
 
 
-import com.sysoiev.shop.department.BaseDepartment;
+import com.sysoiev.shop.department.AbstractDepartment;
 import com.sysoiev.shop.interfaces.GoodsInterface;
 
-public abstract class BaseGoods implements GoodsInterface {
+public abstract class AbstractGoods implements GoodsInterface {
+
+    public AbstractGoods() {
+    }
+
+    public AbstractGoods(String name) {
+        this.name = name;
+    }
+
     // свойства, которые будут иметь все товары
     private double price;
 
@@ -12,7 +20,7 @@ public abstract class BaseGoods implements GoodsInterface {
 
     private String name;
 
-    private BaseDepartment department;
+    private AbstractDepartment department;
 
     private String company;
 
@@ -45,11 +53,11 @@ public abstract class BaseGoods implements GoodsInterface {
     }
 
     @Override
-    public BaseDepartment getDepartment() {
+    public AbstractDepartment getDepartment() {
         return department;
     }
 
-    public void setDepartment(BaseDepartment department) {
+    public void setDepartment(AbstractDepartment department) {
         this.department = department;
     }
 

@@ -1,15 +1,17 @@
 package com.sysoiev.shop.client;
 
-public class VipVisitor extends BaseVisitor {
+
+import com.sysoiev.shop.interfaces.GoodsInterface;
+
+public class VipVisitor extends AbstractVisitor {
 
     // private String name; не нужно дублировать переменную, она уже есть в родительском классе Visitor
     private float discount;
 
-
     @Override
-    public void buy() {
+    public void buy(GoodsInterface goods) {
         if (!checkDiscount()) {
-            super.buy();
+            super.buy(goods);
         }else{
             // купить со скидкой
         }
